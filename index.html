@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+		<meta charset="UTF-8" />
+        <title>Przelicznik walutowy</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		
+    </head>
+    <body>
+		<header>
+			<h1><b>Mały kalkulator walutowy</b></h1>
+		</header>
+		<main>
+			<script type="text/javascript" src="convert.js">
+				showValue();
+			</script>
+			<b>Kwota [w zł]:</b>
+            <input id="cash" placeholder="kwota"><br/><br/>
+			<b>Wybierz walutę docelową:</b>
+            <select id="waluty">
+                <option value="EUR" id="EUR">EUR</option>
+                <option value="USD" id="USD">USD</option>
+                <option value="GBP" id="GBP">GBP</option>
+                <option value="JPY" id="JPY">JPY</option>
+            </select>
+            <button onClick="showValue()">Przelicz</button>
+            <br/>
+		    <p id="w"></p>
+        </main>
+		<hr>
+		<footer>
+			<b>Copyright &copy 2018 by Daniel Molenda. All Rights Reserved.</b>
+		</footer>
+		<hr>
+    </body>
+</html>
